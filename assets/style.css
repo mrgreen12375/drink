@@ -1,6 +1,35 @@
-.square {
+.logo {
+    height: 400px;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.center {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.square {
+    background-color: rgb(154, 154, 154);
     border: 2px solid black;
     height: 50px;
     width: 80%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cocktails {
+    background-color: rgb(154, 154, 154);
+    border: 2px solid black;
+    height: 600px;
+    width: 400px;
 }
