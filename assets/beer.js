@@ -61,7 +61,7 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
                 var maltAmount = ingredients.malt[i].amount.value + ' ' + ingredients.malt[i].amount.unit;
                 maltList.push(' ' + maltAmount +': ' + ingredients.malt[i].name)
             }
-            square[A].style.display = 'block'
+            square[A].style.display = 'flex'
             square[A].children[0].textContent = drinkName 
             square[A].children[1].src = beerData[0].image_url
             square[A].children[2].textContent = beerData[0].description
