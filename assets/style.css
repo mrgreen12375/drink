@@ -52,57 +52,6 @@ h1 {
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*for pop up alerts */
 #modal{
     display: none;
@@ -141,9 +90,7 @@ h1 {
     display: none;
     background-color: rgb(154, 154, 154);
     border: 2px solid black;
-
     line-height: 3px;
     height: auto;
-
     width: 80%;
 }

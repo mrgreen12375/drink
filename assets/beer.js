@@ -47,7 +47,7 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
             })                
         } else {
             //needs to list all ingredients and amounts for each
-            const drinkName = beerData[0].name + ': ';
+            const drinkName = beerData[0].name;
             const {ingredients} = beerData[0];
             var hopsList = [];
             var maltList = [];
@@ -73,21 +73,5 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
 }
 
 
-/*
-$(function() {
-    fetch('https://api.punkapi.com/v2/beers?page=5&per_page=80')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        var availableTags = [];
-        for (let i = 0; i < data.length; i++) {
-            availableTags.push(data[i].name)
-                $( "#beerName" ).autocomplete({
-                source: availableTags
-            });
-        }
 
-    });
-})*/
 
