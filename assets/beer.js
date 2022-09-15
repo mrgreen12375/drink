@@ -64,7 +64,6 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
             square[A].children[3].textContent = 'Hops: ' + hopsList.toString()
             square[A].children[4].textContent = 'Malt: ' + maltList.toString()
             square[A].children[5].textContent = 'ABV: ' + beerData[0].abv + '%'
-            A++;
             drinkInput.value = '';
         }
         console.log(beerData)

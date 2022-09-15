@@ -78,7 +78,7 @@ h1 {
 }
 
 /*for pop up alerts */
-#modal{
+#modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -110,7 +110,6 @@ h1 {
   text-decoration: none;
   cursor: pointer;
 }
-
 .beerSquare {
     display: none;
     background-color: rgb(154, 154, 154);
@@ -118,6 +117,7 @@ h1 {
     line-height: 3px;
     height: auto;
     width: 80%;
+}
 
 #ingredients {
     display: flex;
