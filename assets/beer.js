@@ -10,7 +10,8 @@ var A = 0;
 
 searchBtn.addEventListener('click', searchBeer)
 
-function searchBeer() {
+function searchBeer(event) {
+    event.preventDefault();
 var beerName = drinkInput.value;
 fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
     .then(function(response) {
@@ -26,10 +27,10 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
     })
     .then(function(beerData) {
         console.log(beerData)
+        //if search has multiple options return a list of results and choose one to search
         if (beerData.length > 1) {
             prompt.style.display = 'block';
             promptTxt.textContent = 'There are multiple results with that name, did you mean...'
-            //should list all results related to inital search string, click on item and send that result to api
             var promptList = document.createElement('ol');
             promptTxt.append(promptList);
             for (let i = 0; i < beerData.length; i++) {
@@ -40,27 +41,29 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
                 listItem.onclick = function() {
                 drinkInput.value = beerData[i].name
                 prompt.style.display = 'none';
+                searchBeer();
                 }
             }
             exitPrompt.addEventListener('click', function() {
                 prompt.style.display = 'none';
             })                
         } else {
-            //needs to list all ingredients and amounts for each
+            //lists all ingredients and amounts for each
             const drinkName = beerData[0].name;
             const {ingredients} = beerData[0];
             var hopsList = [];
             var maltList = [];
             for (let i = 0; i < ingredients.hops.length; i++) {
-                hopsList.push(' ' + ingredients.hops[i].name)
+                var hopAmount = ingredients.hops[i].amount.value + ' ' + ingredients.hops[i].amount.unit;
+                hopsList.push(' ' + hopAmount +': ' + ingredients.hops[i].name)
             }
             for (let i = 0; i < ingredients.malt.length; i++) {
-                maltList.push(' ' + ingredients.malt[i].name)
+                var maltAmount = ingredients.malt[i].amount.value + ' ' + ingredients.malt[i].amount.unit;
+                maltList.push(' ' + maltAmount +': ' + ingredients.malt[i].name)
             }
             square[A].style.display = 'block'
             square[A].children[0].textContent = drinkName 
-            console.log(beerData[0].image_url)
-            square[A].children[1].src = beerData[0].image_url// fix this
+            square[A].children[1].src = beerData[0].image_url
             square[A].children[2].textContent = beerData[0].description
             square[A].children[3].textContent = 'Hops: ' + hopsList.toString()
             square[A].children[4].textContent = 'Malt: ' + maltList.toString()
