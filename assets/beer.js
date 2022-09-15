@@ -36,12 +36,12 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
             for (let i = 0; i < beerData.length; i++) {
                 var listItem = document.createElement('li');
                 listItem.textContent = beerData[i].name;
+                listItem.classList.add('listStyle')
                 promptList.append(listItem)
                 listItem.style.cursor = 'pointer'
                 listItem.onclick = function() {
                 drinkInput.value = beerData[i].name
                 prompt.style.display = 'none';
-                searchBeer();
                 }
             }
             exitPrompt.addEventListener('click', function() {
@@ -63,10 +63,15 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
             }
             square[A].style.display = 'flex'
             square[A].children[0].textContent = drinkName 
-            square[A].children[1].src = beerData[0].image_url
+            if (beerData[0].image_url === null) {
+                square[A].children[1].style.display = 'none';
+            } else {
+                square[A].children[1].style.display = 'block';
+                square[A].children[1].src = beerData[0].image_url
+            }
             square[A].children[2].textContent = beerData[0].description
-            square[A].children[3].textContent = 'Hops: ' + hopsList.toString()
-            square[A].children[4].textContent = 'Malt: ' + maltList.toString()
+            square[A].children[3].textContent = 'HOPS/ ' + hopsList.toString()
+            square[A].children[4].textContent = 'MALT/ ' + maltList.toString()
             square[A].children[5].textContent = 'ABV: ' + beerData[0].abv + '%'
             drinkInput.value = '';
         }
