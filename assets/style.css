@@ -23,21 +23,6 @@ body {
     margin: 10px 0px 10px 0px;
 }
 
-.save {
-    background-color: rgb(154, 154, 154);
-    border: 2px solid black;
-    border-radius: 20px;
-    height: 50px;
-    width: 10%;
-}
-
-.square {
-    background-color: rgb(154, 154, 154);
-    border: 2px solid black;
-    height: 50px;
-    width: 80%;
-}
-
 .row {
     display: flex;
     flex-direction: row;
@@ -51,6 +36,16 @@ body {
     width: 400px;
 }
 
+.input-group-rounded .input-group-field {
+    border-radius: 5000px 0 0 5000px;
+    padding-left: 1rem;
+}
+  
+.input-group-rounded .input-group-button .button {
+    border-radius: 0 5000px 5000px 0;
+    font-size: 0.8rem;
+}
+  
 .order {
     display: flex;
     flex-direction: column;
@@ -118,7 +113,7 @@ h1 {
     line-height: 3px;
     height: auto;
     width: 80%;
-
+}
 #ingredients {
     display: flex;
     flex-direction: column;
