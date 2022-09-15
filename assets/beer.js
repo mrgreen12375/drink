@@ -59,12 +59,12 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
             }
             square[A].style.display = 'block'
             square[A].children[0].textContent = drinkName 
-            square[A].children[1].src = beerData[0].img_url
+            console.log(beerData[0].image_url)
+            square[A].children[1].src = beerData[0].image_url// fix this
             square[A].children[2].textContent = beerData[0].description
             square[A].children[3].textContent = 'Hops: ' + hopsList.toString()
             square[A].children[4].textContent = 'Malt: ' + maltList.toString()
             square[A].children[5].textContent = 'ABV: ' + beerData[0].abv + '%'
-            A++;
             drinkInput.value = '';
         }
         console.log(beerData)
