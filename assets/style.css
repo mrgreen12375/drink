@@ -1,6 +1,15 @@
+main {
+    margin-bottom: 50px;
+}
+
 .logo {
     height: 400px;
     width: 100%;
+}
+
+.homeImg {
+    width: 100%;
+    height: auto;
 }
 
 body {
@@ -48,6 +57,46 @@ body {
     align-items: center;
 }
 
+#cocktailName {
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+}
+
+#cocktailButton {
+    border-radius: 5px;
+    background-color: rgb(54, 104, 255);
+    padding: 3px;
+}
+
+#cocktailButton:hover {
+    background-color: rgb(109, 145, 255);
+}
+
 h1 {
     color: white;
+}
+
+#ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+img {
+    width: 20%;
+}
+
+p {
+    font-size: 20px;
+    background-color: rgb(39, 39, 46);
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+}
+
+li {
+    list-style: none;
+    font-size: 30px;
 }
