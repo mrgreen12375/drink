@@ -57,7 +57,7 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
             for (let i = 0; i < ingredients.malt.length; i++) {
                 maltList.push(' ' + ingredients.malt[i].name)
             }
-            square[A].style.display = 'block'
+            square[A].style.display = 'flex'
             square[A].children[0].textContent = drinkName 
             console.log(beerData[0].image_url)
             square[A].children[1].src = beerData[0].image_url// fix this
