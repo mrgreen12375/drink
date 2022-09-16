@@ -17,7 +17,9 @@
             <h1>Search below to find ingredients of your favorite beers!</h1>
             <form>
                 <input type="text" name="beerName" id="beerName" placeholder="Enter Drink Name Here"/>
-                <button type="button" id="beerButton">Search Beers</button>
+
+                <button type="submit" id="beerButton">Search</button>
+
             </form>
         </div>
         <div class="center">
@@ -25,20 +27,18 @@
                 <h2 class="name"></h2>
                 <img class="beerImg" src=""/>
                 <p class="desc"></p>
-                <h4 class="hops"></h4>
-                <h4 class="malt"></h4>
-                <h4 class="abv"></h4>
+                <h3 class="hops"></h3>
+                <h3 class="malt"></h3>
+                <h2 class="abv"></h2>
             </div>
         </div>
         <div id="modal">
             <div id="modalContent">
                 <span id="close">X</span>
-                <p id="promptTxt"></p>
+                <h3 id="promptTxt"></h3>
             </div>
         </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="./assets/beer.js"></script>
 </body>
 </html>
