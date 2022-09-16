@@ -115,6 +115,7 @@ h1 {
     width: 40%;
     height: fit-content;
     border-radius: 10px;
+    margin-bottom: 150px;
 }
 #close {
     font-family: 'Courier New', Courier, monospace;

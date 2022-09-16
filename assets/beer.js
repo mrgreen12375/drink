@@ -15,7 +15,6 @@ function searchBeer(event) {
 var beerName = drinkInput.value;
 fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
     .then(function(response) {
-        console.log(response)
         if (!response.ok) {
             prompt.style.display = 'block';
             promptTxt.textContent = "We couldn't find a drink by that name. Try again!";
@@ -26,7 +25,7 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
         return response.json();
     })
     .then(function(beerData) {
-        console.log(beerData)
+        //console.log(beerData)
         //if search has multiple options return a list of results and choose one to search
         if (beerData.length > 1) {
             prompt.style.display = 'block';
@@ -75,8 +74,6 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
             square[A].children[5].textContent = 'ABV: ' + beerData[0].abv + '%'
             drinkInput.value = '';
         }
-        console.log(beerData)
-        console.log(beerData[0].ingredients)
     }) 
 }
 
