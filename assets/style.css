@@ -42,6 +42,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 50px;
 }
 
 .cocktails {
@@ -142,7 +143,21 @@ li {
     list-style: none;
     font-size: 30px;
 }
-  
+.input-group-rounded .input-group-field {
+    border-radius: 20px;
+    padding-left: 1rem;
+}
+
+.input-group-rounded .input-group-button .button {
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.drinkImg {
+   height: 400px;
+   width: 300px;
+}
+
 .order {
     display: flex;
     flex-direction: column;
@@ -165,12 +180,28 @@ li {
     background-color: rgb(109, 145, 255);
 }
 
+#beerName {
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+}
+
+#beerButton {
+    border-radius: 5px;
+    background-color: rgb(54, 104, 255);
+    padding: 3px;
+}
+
+#Button:hover {
+    background-color: rgb(109, 145, 255);
+}
+
 h1 {
     color: white;
 }
 
 /*for pop up alerts */
-#modal{
+#modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -190,27 +221,51 @@ h1 {
     width: 40%;
     height: fit-content;
     border-radius: 10px;
+    margin-bottom: 150px;
 }
 #close {
+    font-family: 'Courier New', Courier, monospace;
     color: #aaaaaa;
+    border: 2px solid #aaaaaa;
+    padding-left: 2px;
+    padding-right: 2px;
     float: right;
     font-size: 18px;
     font-weight: bold;
   }
 #close:hover, #close:focus {
   color: rgba(253, 0, 0, .8);
+  border: 2px solid rgba(253, 0, 0, .8);
   text-decoration: none;
   cursor: pointer;
 }
-
+.listStyle {
+    text-align: start;
+    font-size: 18px;
+    width: 90%;
+    border-bottom: 2px solid black;
+}
+.listStyle:hover {
+    color: rgb(54, 104, 255);
+}
+.listStyle:active {
+    color: darkblue;
+}
 .beerSquare {
-    display: none;
-    background-color: rgb(154, 154, 154);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
     border: 2px solid black;
-    line-height: 3px;
     height: auto;
     width: 80%;
 }
+
+.beerImg {
+    height: 400px;
+    width: auto;
+}
+
 #ingredients {
     display: flex;
     flex-direction: column;
