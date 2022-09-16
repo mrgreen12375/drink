@@ -41,6 +41,7 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
                 listItem.onclick = function() {
                 drinkInput.value = beerData[i].name
                 prompt.style.display = 'none';
+                searchBtn.click();
                 }
             }
             exitPrompt.addEventListener('click', function() {
