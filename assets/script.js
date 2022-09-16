@@ -10,7 +10,9 @@ function createFavoriteList() {
 }
 
 function init () {
-    for ( let i=0; i<= 9; i++) 
+    for ( let i=0; i<= ; i++) {
+
+    }
 }
 
 init ()

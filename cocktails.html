@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cocktail Directory</title>
+    <link rel="shortcut icon" href="./assets/logo-fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css"/>
 </head>
+<header>
+    <img class="logo" src="./assets/header-2.png" alt="drinks"/> 
+</header>
 <body>
-    
+    <main>
+        <div class="order">
+            <h1>Search below to find the ingredients of you favorite cocktail</h1>
+            <form>
+                <input type="text" name="cocktailName" id="cocktailName" placeholder="Enter Drink Name Here">
+                <button type="submit" id="cocktailButton">Search Cocktails</button>
+            </form>
+        </div>
+        <div id="ingredients"></div>
+    </main>
+    <script src="./assets/cocktail.js"></script>
 </body>
 </html>
