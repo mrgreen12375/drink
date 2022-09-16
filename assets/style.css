@@ -114,9 +114,6 @@ h1 {
 
 .beerSquare {
     display: none;
-    background-color: rgb(154, 154, 154);
-    border: 2px solid black;
-    line-height: 3px;
     height: auto;
     width: 80%;
 }
