@@ -143,15 +143,44 @@ li {
     list-style: none;
     font-size: 30px;
 }
-.input-group-rounded .input-group-field {
+/* start Homepage Styles-------------------------------------*/
+.centered {
+    text-align: center;
+    margin: auto;
+    
+}
+.input-group-field {
     border-radius: 20px;
-    padding-left: 1rem;
+    width: 50%;
+    align-items: center;
 }
 
-.input-group-rounded .input-group-button .button {
-    border-radius: 20px;
-    font-size: 0.8rem;
+.input-group-field {
+    border-radius: 5px;
 }
+
+.saveButton {
+    border-radius: 5px;
+    margin: 1rem 0rem;
+}
+
+.inputSave {
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.listLook {
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #767676;
+    color: white;
+    padding: 5px;
+    margin: 2px auto;
+    text-align: center;
+}
+/*end Homepage Styles-----------------------------------*/
 
 .drinkImg {
    height: 400px;

@@ -1,18 +1,32 @@
-var i=0
+
+var listLength=document.getElementById("drinks").childElementCount
+
+
 function createFavoriteList() {
-    var drink=document.getElementById("drinkSaved");
+    var i=localStorage.length;
     var saveHistory=document.createElement("li");
-    saveHistory.classList.add("listStyle");
-    localStorage.setItem("drink"+i, drink.value);
-    saveHistory.innerHTML=drink.value;
+    var drink=document.getElementById("drinksSaved").value;
+    saveHistory.classList.add("listLook");
+    localStorage.setItem(i, drink);
+    saveHistory.innerHTML=drink;
     document.getElementById("drinks").appendChild(saveHistory);
     i=i+1
+    listLength=listLength
+    console.log(drink)
+    console.log(listLength)
 }
 
 function init () {
-    for ( let i=0; i<= ; i++) {
-
+    for (var i=0; i<localStorage.length; i++) {
+        var getSavedHistory = localStorage.getItem(i);
+        console.log(getSavedHistory);
+            if (getSavedHistory !== null) {
+                var savedHistory = document.createElement("li");
+                savedHistory.classList.add("listLook");
+                savedHistory.innerHTML =getSavedHistory;
+                document.getElementById("drinks").appendChild(savedHistory);
+                } 
     }
 }
 
-init ()
+init ();

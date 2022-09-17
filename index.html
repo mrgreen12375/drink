@@ -14,18 +14,22 @@
 </header>
 <body>
     <main>
-        <div class="input-group input-group-rounded">
-            <input id= "drinksSaved" class="input-group-field" type="search">
-        </div>
-        <div class="input-group-button">
-            <input type="text" class="button secondary" onclick="createFavoriteList()" value="Save">
-        </div>
+      <div class="centered">
+        <input id= "drinksSaved" class="input-group-field inputSave" type="text" placeholder= "Enter Drinks Here" value="">
+        <button type="button" class="button secondary large button-radius saveButton" onclick="createFavoriteList()">Save</button>
         <ul id="drinks"></ul>
+      </div>
         <div class="row">
             <a href="cocktails.html"><img class="drinkImg" src="./assets/Cocktails_button.PNG" alt="cocktail"/></a>
             <a href="beers.html"><img class="drinkImg" src="./assets/Beer2.PNG" alt="beer"/></a>
         </div>
     </main>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
   <script src="./assets/script.js"></script>
+  
 </body>
 </html>
