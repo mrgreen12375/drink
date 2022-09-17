@@ -1,8 +1,8 @@
 .neonText {
     animation: flicker 1.5s infinite alternate;
     color: #fff;
-    
-/*    background-size: 75%; */
+    background-image: url(bricks.jpg);
+    background-size: 100%; 
     height: 400px;
     width: 100%;
     display: flex;
@@ -17,40 +17,6 @@
     font-size: 70px;
   }
 
-  .neonTextBG1 {
-    background-image: url(https://pixabay.com/photos/background-blue-wall-brick-2661411/);
-    background-position: 50% 75%;
-  }
-
-  .neonTextBG2 {
-    /*background-image: url(https://pixabay.com/photos/background-blue-wall-brick-2661411/);
-    background-position: 50% 75%;*/
-
-  }
-
-  .neonTextCocktails {
-    animation: flicker 1.5s infinite alternate;
-    color: #fff;
-    background-image: url(https://pixabay.com/photos/background-blue-wall-brick-2661411/);
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
- 
-  .neonTextBeers {
-    animation: flicker 1.5s infinite alternate;
-    color: #fff;
-   /* background-image: url(./Cocktail_background.jpg);*/
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   /* Flickering animation */
   @keyframes flicker {
       
@@ -60,11 +26,11 @@
         0 0 4px #fff,
         0 0 11px #fff,
         0 0 19px #fff,
-        0 0 40px #0fa,
-        0 0 80px #0fa,
-        0 0 90px #0fa,
-        0 0 100px #0fa,
-        0 0 150px #0fa;
+        0 0 40px rgb(0, 204, 255),
+        0 0 80px rgb(0, 204, 255),
+        0 0 90px rgb(0, 204, 255),
+        0 0 100px rgb(0, 204, 255),
+        0 0 150px rgb(0, 204, 255);
     
     }
     
