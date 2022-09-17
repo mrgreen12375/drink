@@ -121,6 +121,16 @@ h1 {
     margin: 1rem 0rem;
 }
 
+.clearButton {
+    height: auto;
+    width: auto;
+    border-radius: 5 px;
+    color: white;
+    font-size: 18px;
+    align-items: flex-end;
+    margin: 0px 5px;
+}
+
 .inputSave {
     border-radius: 5px;
     margin: auto;
@@ -137,6 +147,7 @@ h1 {
     margin: 2px auto;
     text-align: center;
 }
+
 /*end Homepage Styles-----------------------------------*/
 
 .drinkImg {
