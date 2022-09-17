@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
   
   .neontextFont {
@@ -38,27 +37,11 @@
         text-shadow: none;
     }    
   }
-  
-  
   /* Additional styling */
     
-  h2 {
-   font-size: 1.8rem;
-  }
-
-  
-  body {
-    font-size: 18px;
-    font-family: "Helvetica Neue", sans-serif;
-    background-color: #010a01;
-  }  
-
-
 main {
     margin-bottom: 50px;
 }
-
-
 
 .homeImg {
     width: 100%;
@@ -74,21 +57,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 10px 0px 10px 0px;
-}
-
-.save {
-    background-color: rgb(154, 154, 154);
-    border: 2px solid black;
-    border-radius: 20px;
-    height: 50px;
-    width: 10%;
-}
-
-.square {
-    background-color: rgb(154, 154, 154);
-    border: 2px solid black;
-    height: 50px;
-    width: 80%;
 }
 
 .row {
@@ -130,64 +98,6 @@ body {
 
 h1 {
     color: white;
-}
-
-/*for pop up alerts */
-#modal{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, .4);
-}
-#modalContent {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 40%;
-    height: fit-content;
-    border-radius: 10px;
-}
-#close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 18px;
-    font-weight: bold;
-  }
-#close:hover, #close:focus {
-  color: rgba(253, 0, 0, .8);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#ingredients {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-
-img {
-    width: 20%;
-}
-
-p {
-    font-size: 20px;
-    background-color: rgb(39, 39, 46);
-    border-radius: 5px;
-    padding: 10px;
-    width: 30%;
-}
-
-li {
-    list-style: none;
-    font-size: 30px;
 }
 /* start Homepage Styles-------------------------------------*/
 .centered {
@@ -232,12 +142,6 @@ li {
 .drinkImg {
    height: 400px;
    width: 300px;
-}
-
-.order {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #cocktailName {
@@ -349,6 +253,25 @@ h1 {
 .beerImg {
     height: 400px;
     width: auto;
+}
+
+.goList {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(54, 104, 255);
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.goList:hover {
+    background-color: rgb(109, 145, 255);
+}
+
+.buttonRow {
+    display: flex;
 }
 
 #ingredients {
