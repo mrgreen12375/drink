@@ -1,11 +1,19 @@
-var cocktailName = document.querySelector('#cocktailName')
-var cocktailButton = document.querySelector('#cocktailButton')
+var cocktailName = document.querySelector('#cocktailName');
+var cocktailButton = document.querySelector('#cocktailButton');
+var prompt = document.getElementById('modal');
+var promptTxt = document.getElementById('promptTxt');
+var exitPrompt = document.getElementById('close');
+
 
 function searchButton(event){
     event.preventDefault();
     cocktail = cocktailName.value.trim();
     if(cocktail == ''){
-        window.alert('please enter cocktail name');
+        prompt.style.display = 'block';
+            promptTxt.textContent = "Alert: We couldn't find a drink by that name. Please try again!";
+            exitPrompt.addEventListener('click', function() {
+                prompt.style.display = 'none';
+        })
         return
     } 
     getCocktailInfo()

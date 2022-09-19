@@ -17,7 +17,7 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
     .then(function(response) {
         if (!response.ok) {
             prompt.style.display = 'block';
-            promptTxt.textContent = "We couldn't find a drink by that name. Try again!";
+            promptTxt.textContent = "Alert: We couldn't find a drink by that name. Please try again!";
             exitPrompt.addEventListener('click', function() {
                 prompt.style.display = 'none';
             })
