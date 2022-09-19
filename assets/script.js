@@ -16,8 +16,6 @@ function createFavoriteList() {
     clearEntry.setAttribute("id", "clear"+i);
     clearEntry.setAttribute("type", "button");
     clearEntry.classList.add("clearButton");
-    //clearEntry.classList.add("close-button");
-    //clearEntry.innerHTML="&times;"
     document.getElementById("drink"+i).appendChild(clearEntry);
     
     

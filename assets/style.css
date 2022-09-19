@@ -63,7 +63,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 50px;
 }
 
 .cocktails {
@@ -103,7 +102,6 @@ h1 {
 .centered {
     text-align: center;
     margin: auto;
-    
 }
 
 .input-group-rounded .input-group-field {
@@ -149,6 +147,12 @@ h1 {
 }
 
 /*end Homepage Styles-----------------------------------*/
+h4 {
+    text-align: center;
+    color: white;
+    font-family: "Pacifico",sans-serif;
+    text-decoration: underline;
+}
 
 .drinkImg {
    height: 400px;
