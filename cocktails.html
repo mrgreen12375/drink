@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--setup stylesheets css, favicon, fonts, and title -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="shortcut icon" href="./assets/logo-fav.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style.css"/>
 </head>
+<!--setup header for the drink title and background image-->
 <header>
     <div class="neonText">
         <h1 class="neontextFont">
@@ -16,9 +18,10 @@
         </h1>
    </div>
 </header>
+<!--setup main sections for instructions, links to list home page and beers, input field and search button for cocktails, and modal for alert.-->
 <body>
     <main>
-        <div class="order">
+        <section class="order">
             <h1>Search below to find the ingredients of you favorite cocktail!</h1>
             <div class="buttonRow">
                 <a class="goList" href="index.html">Go To List</a>
@@ -28,15 +31,16 @@
                 <input type="text" name="cocktailName" id="cocktailName" placeholder="Enter Drink Name Here">
                 <button type="submit" id="cocktailButton">Search Cocktails</button>
             </form>
-        </div>
-        <div id="ingredients"></div>
-        <div id="modal">
+        </section>
+        <section id="ingredients"></section>
+        <section id="modal">
             <div id="modalContent">
                 <span id="close">X</span>
                 <h3 id="promptTxt"></h3>
             </div>
-        </div>
+        </section>
     </main>
+<!--setup link for cocktails.js-->
     <script src="./assets/cocktail.js"></script>
 </body>
 </html>

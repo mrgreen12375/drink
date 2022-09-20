@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--setup stylesheets css, favicon, fonts, and title -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Beer Directory</title>
 </head>
+<!--setup header for the drink title and background image-->
 <header>
     <div class="neonText">
         <h1 class="neontextFont">
@@ -16,9 +18,10 @@
         </h1>
    </div>
 </header>
+<!--setup main sections for instructions, links to list home page and beers, input field and search button for beer, and modal for alert.-->
 <body>
     <main>
-        <div class="order">
+        <section class="order">
             <h1>Search below to find ingredients of your favorite beers!</h1>
             <div class="buttonRow">
                 <a class="goList" href="./index.html">Go To List</a>
@@ -26,12 +29,10 @@
             </div>
             <form>
                 <input type="text" name="beerName" id="beerName" placeholder="Enter Drink Name Here"/>
-
                 <button type="submit" id="beerButton">Search Beers</button>
-
             </form>
-        </div>
-        <div class="center">
+        </section>
+        <section class="center">
             <div class="beerSquare">
                 <h2 class="name"></h2>
                 <img class="beerImg" src=""/>
@@ -40,14 +41,15 @@
                 <h3 class="malt"></h3>
                 <h2 class="abv"></h2>
             </div>
-        </div>
-        <div id="modal">
+        </section>
+        <section id="modal">
             <div id="modalContent">
                 <span id="close">X</span>
                 <h3 id="promptTxt"></h3>
             </div>
-        </div>
+        </section>
     </main>
+<!--setup link for beer.js-->
     <script src="./assets/beer.js"></script>
 </body>
 </html>

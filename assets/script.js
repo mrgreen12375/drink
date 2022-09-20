@@ -1,6 +1,7 @@
 
+//setup variable for list 
 var listLength=document.getElementById("drinks").childElementCount
-
+//setup fuction to create list
 function createFavoriteList() {
     var i=localStorage.length;
     var saveHistory=document.createElement("li");
@@ -23,7 +24,7 @@ function createFavoriteList() {
     clearEntryText.innerHTML="&times;"
     document.getElementById("clear"+i).appendChild(clearEntryText);
 }
-
+//setup function to remove list item from local storage
 function clearFromLocal (i) {
     var drinkEl=document.getElementById("drink"+i);
     drinkEl.remove();

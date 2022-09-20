@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--setup stylesheets css, favicon, css framework, fonts, and title -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="shortcut icon" href="./assets/logo-fav.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style.css"/>
 </head>
+<!--setup header for the drink logo and background image-->
 <header>
    <div class="neonText ">
         <h1 class="neontextFont">
@@ -18,22 +20,24 @@
         <h2 class="neontextFont"> a drinking app </h2>
    </div>
 </header>
+<!--setup main sections the save drink name input field with save button, the search titles, and the links to the drink directories-->
 <body>
     <main>
-      <div class="centered">
+      <section class="centered">
         <input id= "drinksSaved" class="input-group-field inputSave" type="text" placeholder= "Save Drink Names Here" value="">
         <button type="button" class="button secondary large button-radius saveButton" onclick="createFavoriteList()">Save</button>
         <ul id="drinks"></ul>
-      </div>
-      <div class="row">
+      </section>
+      <section class="row">
         <h4>Search Cocktails</h4>
         <h4>Search Beer</h4>
-      </div>
-      <div class="row">
+      </section>
+      <section class="row">
         <a href="cocktails.html"><img class="drinkImg" src="./assets/Cocktails_button.PNG" alt="cocktail"/></a>
         <a href="beers.html"><img class="drinkImg" src="./assets/Beer2.PNG" alt="beer"/></a>
-      </div>
+      </section>
     </main>
+<!--setup scripts elements for jquery, foundation, and script.js-->    
   <script
     src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
