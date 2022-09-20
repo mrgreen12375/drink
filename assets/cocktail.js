@@ -1,16 +1,18 @@
+//setup variables for cocktail input field and button
 var cocktailName = document.querySelector('#cocktailName');
 var cocktailButton = document.querySelector('#cocktailButton');
+//setup variables for aleart modal
 var prompt = document.getElementById('modal');
 var promptTxt = document.getElementById('promptTxt');
 var exitPrompt = document.getElementById('close');
 
-
+//setup function to initiate modal if field is empty or get cocktail information
 function searchButton(event){
     event.preventDefault();
     cocktail = cocktailName.value.trim();
     if(cocktail == ''){
         prompt.style.display = 'block';
-            promptTxt.textContent = "Alert: We couldn't find a drink by that name. Please try again!";
+            promptTxt.textContent = "Alert: Please Enter Drink Name";
             exitPrompt.addEventListener('click', function() {
                 prompt.style.display = 'none';
         })
@@ -18,11 +20,11 @@ function searchButton(event){
     } 
     getCocktailInfo()
 }
-
+//setup function to clear prior cocktail search
 function clearPriorSearch(){
     ingredients.innerHTML = '';
 }
-
+//setup funtion to fetch cocktial API information, clear prior search, and display current cocktail information
 function getCocktailInfo() {
 
     var cocktailInfo = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktail}`;
@@ -36,7 +38,7 @@ function getCocktailInfo() {
         displayCocktail(data);
     });
 }
-
+//setup function to create elements for the API data parameters used with a for loop and if statement for the measurements/ingredients
 function displayCocktail(display) {
     console.log(display.drinks[0]);
 
@@ -71,5 +73,5 @@ function displayCocktail(display) {
         ingredients.appendChild(ingredientLs);
     }
 }
-
+//setup event listener for search button
 cocktailButton.addEventListener('click', searchButton);

@@ -1,3 +1,4 @@
+/*style for header title*/
 .neonText {
     animation: flicker 1.5s infinite alternate;
     color: #fff;
@@ -37,8 +38,7 @@
         text-shadow: none;
     }    
   }
-  /* Additional styling */
-    
+/*style to push content off of the bottom of the page*/   
 main {
     margin-bottom: 50px;
 }
@@ -47,18 +47,18 @@ main {
     width: 100%;
     height: auto;
 }
-
+/*style for the body background color*/
 body {
     background-color: black;
 }
-
+/*style to center beer list modal*/
 .center {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 0px 10px 0px;
 }
-
+/*style to row the search titles, cocktails link, and beer link*/
 .row {
     display: flex;
     flex-direction: row;
@@ -71,13 +71,13 @@ body {
     height: 600px;
     width: 400px;
 }
-
+/*style to order the cocktail directory*/
 .order {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/*style for cocktail directory input field, button, and button hover*/
 #cocktailName {
     border-radius: 5px;
     padding: 2px;
@@ -88,13 +88,14 @@ body {
     border-radius: 5px;
     background-color: rgb(54, 104, 255);
     padding: 3px;
+    color: white;
 }
 
 #cocktailButton:hover {
     background-color: rgb(109, 145, 255);
 }
 
-
+/*style for h1 text color*/
 h1 {
     color: white;
 }
@@ -147,34 +148,19 @@ h1 {
 }
 
 /*end Homepage Styles-----------------------------------*/
+/*style for search titles*/
 h4 {
     text-align: center;
     color: white;
     font-family: "Pacifico",sans-serif;
     text-decoration: underline;
 }
-
+/*style for directory link image size*/
 .drinkImg {
    height: 400px;
    width: 300px;
 }
-
-#cocktailName {
-    border-radius: 5px;
-    padding: 2px;
-    text-align: center;
-}
-
-#cocktailButton {
-    border-radius: 5px;
-    background-color: rgb(54, 104, 255);
-    padding: 3px;
-}
-
-#cocktailButton:hover {
-    background-color: rgb(109, 145, 255);
-}
-
+/*style for beer directory input field, button, and button hover*/
 #beerName {
     border-radius: 5px;
     padding: 2px;
@@ -184,15 +170,12 @@ h4 {
 #beerButton {
     border-radius: 5px;
     background-color: rgb(54, 104, 255);
+    color: white;
     padding: 3px;
 }
 
 #Button:hover {
     background-color: rgb(109, 145, 255);
-}
-
-h1 {
-    color: white;
 }
 /*for pop up alerts */
 #modal {
@@ -236,7 +219,7 @@ h1 {
   text-decoration: none;
   cursor: pointer;
 }
-
+/*style for beer directory information*/
 .listStyle {
     text-align: start;
     font-size: 18px;
@@ -269,10 +252,10 @@ h1 {
     height: 400px;
     width: auto;
 }
-
+/*style for links to home list and directories*/
 .goList {
     text-decoration: none;
-    color: black;
+    color: white;
     background-color: rgb(54, 104, 255);
     border-radius: 5px;
     padding: 8px;
@@ -288,7 +271,7 @@ h1 {
 .buttonRow {
     display: flex;
 }
-
+/*style for cocktail directory information*/
 #ingredients {
     display: flex;
     flex-direction: column;

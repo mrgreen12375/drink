@@ -1,5 +1,7 @@
+//setup variables for cocktail input field and button
 var drinkInput = document.getElementById('beerName');
 var searchBtn = document.getElementById('beerButton');
+//setup variables for aleart and beer name list modal
 var prompt = document.getElementById('modal');
 var promptTxt = document.getElementById('promptTxt');
 var exitPrompt = document.getElementById('close');
@@ -7,9 +9,10 @@ var square = document.getElementsByClassName('beerSquare');
 var desc = document.getElementsByClassName('desc');
 
 var A = 0;
-
+//setup event listener for search beer button
 searchBtn.addEventListener('click', searchBeer)
-
+//setup funtion for modal alert, modal beer list, and fetch beer API information
+//the element created for the beer list modal and main beer information displayed was made using if / else statement
 function searchBeer(event) {
     event.preventDefault();
 var beerName = drinkInput.value;
@@ -17,7 +20,7 @@ fetch('https://api.punkapi.com/v2/beers?beer_name=' + beerName)
     .then(function(response) {
         if (!response.ok) {
             prompt.style.display = 'block';
-            promptTxt.textContent = "Alert: We couldn't find a drink by that name. Please try again!";
+            promptTxt.textContent = "Alert: Please Enter Drink Name";
             exitPrompt.addEventListener('click', function() {
                 prompt.style.display = 'none';
             })
