@@ -95,6 +95,17 @@ body {
     background-color: rgb(109, 145, 255);
 }
 
+#cocktailRandom {
+    border-radius: 5px;
+    background-color: rgb(54, 104, 255);
+    padding: 3px;
+    color: white;
+}
+
+#cocktailRandom:hover {
+    background-color: rgb(109, 145, 255);
+}
+
 /*style for h1 text color*/
 h1 {
     color: white;
